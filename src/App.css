@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav {
+  background-color: #333;
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 20px;
+  z-index: 100; /* Ensure the navbar is above other elements */
+}
+
+/* Adjust the sidebar styles */
+.Sidebar {
+  left: 0;
+  top: 60px;
+  height: calc(100vh - 60px);
+  width: 250px;
+  background-color: #2f4050;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.Sidebar2 {
+  top: 60px; /* Assuming your Navbar height is 60px */
+  right: 0;
+  width: 250px; /* Adjust width as needed */
+  height: calc(100vh - 60px); /* Adjust height considering Navbar */
+  background-color: #2f4050;
+  border-top-left-radius: 10px; /* Adjust border radius as needed */
+  border-bottom-left-radius: 10px; /* Adjust border radius as needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+/* Adjust styles for the sidebar list */
+.SidebarList {
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 60px;
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #293846;
+}
+
+.SidebarList .row.active {
+  background-color: #293846;
+}
+
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.row #title {
+  flex: 70%;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.JpegViewer {
+  margin-top: 60px; /* Adjust margin-top as needed */
+  margin-bottom: 20px; /* Add margin at the bottom */
+  text-align: center; /* Center align content */
+}
+.Cards {
+  margin-top: 20px; /* Add margin at the top */
+  margin-bottom: 60px; /* Adjust margin-bottom as needed */
+  text-align: center; /* Center align content */
+}
+
+.centered-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-text {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
